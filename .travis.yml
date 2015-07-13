@@ -3,7 +3,9 @@ language: perl
 install:
   - cpanm Test::Builder
 
-script: HARNESS_IS_VERBOSE=1 prove -lv t
+script:
+  - pwd
+  - HARNESS_IS_VERBOSE=1 prove -lv t
 
 perl:
   - "5.21"
